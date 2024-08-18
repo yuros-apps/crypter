@@ -1,0 +1,21 @@
+#!/bin/bash
+
+
+source lib/crypter_lib
+
+
+if [[ "keys" == "$1" ]];then
+    yuros_crypto_keys
+elif [[ "devel" == "$1" ]];then
+    yuros_crypto_devs
+elif [[ "data" == "$1" ]];then
+    yuros_crypto_data
+elif [[ "game" == "$1" ]];then
+    yuros_crypto_game
+elif [[ "vhost" == "$1" ]];then
+    yuros_crypto_virt
+elif [[ "podman" == "$1" ]];then
+    yuros_crypto_pods
+elif [[ "docker" == "$1" ]];then
+    yuros_crypto_dock
+fi
